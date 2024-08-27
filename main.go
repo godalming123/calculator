@@ -130,14 +130,13 @@ func calculateExpressionWithoutBrackets(expression string) (float64, error) {
 	var err error
 	
 	// Simplify * and /
-	loop:
 	for index := 0; index < len(expression); index++ {
 		if expression[index] == '*' || expression[index] == '/' {
 			expression, err = simplifyExpression(expression, index)
 			if err != nil {
 				return 0, err
 			}
-			goto loop
+			index = 0
 		}
 	}
 
