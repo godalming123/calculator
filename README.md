@@ -1,5 +1,5 @@
 # Calculator
-A calculator written in go that uses BODMAS to determine order of operations. All of the logic to calculate results has been design by me without help from any other people's ideas.
+A calculator written in go that uses BODMAS to determine order of operations. All of the logic to calculate results has been entirely designed by me without help from any other people's ideas.
 
 ## Things that are supported
 - Brackets with several layers of nesting
